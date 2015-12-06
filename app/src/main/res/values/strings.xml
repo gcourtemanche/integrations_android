@@ -1,0 +1,32 @@
+<resources>
+    <string-array name="type_user">
+        <item>Nouveau</item>
+        <item>Chef d\'équipe</item>
+        <item>Bénévole</item>
+        <item>TSJ</item>
+    </string-array>
+
+    <string-array name="activites">
+        <item>Lundi dîner</item>
+        <item>DAST début</item>
+        <item>DAST fin</item>
+        <item>Méchoui</item>
+        <item>Jeudi dîner</item>
+    </string-array>
+
+    <string name="app_name">Intégration 61</string>
+
+    <string name="title_section1">Jumeler</string>
+    <string name="title_section2">Lire</string>
+    <string name="title_section3">Scan</string>
+    <string name="title_section4">Trouver</string>
+    <string name="title_section5">Statistiques</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
