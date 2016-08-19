@@ -17,14 +17,9 @@ import mobisocial.nfc.Nfc;
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-    /**
-     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
-     */
+    // Fragment managing the behaviors, interactions and presentation of the navigation drawer.
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
-    /**
-     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
-     */
     private CharSequence mTitle;
     private Nfc mNfc;
     private int currentFragment = 0;
@@ -61,7 +56,9 @@ public class MainActivity extends AppCompatActivity
         // your activity's onPause code
     }
 
+
     public void onNewIntent(Intent intent) {
+        // If the intent is nfc releated
         if (mNfc.onNewIntent(this, intent)) {
             Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
             String uid = Functions.bin2hex(tag.getId());

@@ -31,6 +31,7 @@ public class FindFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.find_fragment, container, false);
         et_prenom = (EditText) rootView.findViewById(R.id.et_prenom);
         et_nom = (EditText) rootView.findViewById(R.id.et_nom);
