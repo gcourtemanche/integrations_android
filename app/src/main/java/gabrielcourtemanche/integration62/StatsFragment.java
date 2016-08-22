@@ -1,4 +1,4 @@
-package gabrielcourtemanche.integration61;
+package gabrielcourtemanche.integration62;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -32,10 +32,10 @@ public class StatsFragment extends Fragment {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject stats) {
                 try {
-                    textView.setText("Lundi dîner : " + stats.getString("lundi_diner") +
-                            "\nDast début : " + stats.getString("dast_debut") +
-                            "\nDast fin : " + stats.getString("dast_fin") +
-                            "\nMéchoui : " + stats.getString("mechoui") +
+                    textView.setText("Méchoui : " + stats.getString("mechoui") +
+                            "\nMardi début : " + stats.getString("mardi_in") +
+                            "\nMardi fin : " + stats.getString("mardi_out") +
+                            "\nMercredi souper : " + stats.getString("mercredi_souper") +
                             "\nJeudi dîner : " + stats.getString("jeudi_diner"));
                 } catch (JSONException e) {
                     Toast toast = Toast.makeText(getActivity().getApplicationContext(), "Erreur Serveur", Toast.LENGTH_SHORT);

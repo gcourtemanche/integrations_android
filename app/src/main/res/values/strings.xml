@@ -7,14 +7,14 @@
     </string-array>
 
     <string-array name="activites">
-        <item>Lundi dîner</item>
-        <item>DAST début</item>
-        <item>DAST fin</item>
         <item>Méchoui</item>
+        <item>Mardi début</item>
+        <item>Mardi fin</item>
+        <item>Mercredi Souper</item>
         <item>Jeudi dîner</item>
     </string-array>
 
-    <string name="app_name">Intégration 61</string>
+    <string name="app_name">Intégration 62</string>
 
     <string name="title_section1">Jumeler</string>
     <string name="title_section2">Lire</string>

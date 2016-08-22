@@ -1,8 +1,7 @@
-package gabrielcourtemanche.integration61;
+package gabrielcourtemanche.integration62;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.widget.Toast;
 
 import java.math.BigInteger;
 

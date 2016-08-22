@@ -1,9 +1,8 @@
-package gabrielcourtemanche.integration61;
+package gabrielcourtemanche.integration62;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Fragment;
-import android.content.SyncAdapterType;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +21,7 @@ import org.json.JSONObject;
 public class ScanFragment extends Fragment {
     private TextView infoUser;
     private Spinner list_activites;
-    private static String [] db_list_activites = {"lundi_diner", "dast_debut", "dast_fin", "mechoui", "jeudi_diner"};
+    private static String [] db_list_activites = {"mechoui", "mardi_in", "mardi_out", "mercredi_souper", "jeudi_diner"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,7 +47,10 @@ public class ScanFragment extends Fragment {
                 } catch (JSONException e) {
                     toast.show();
                 }
-                if (response.equals("ok")) {
+                if (response.equals("ERREUR")) {
+                    toast.show();
+                }
+                else if (response.equals("ok")) {
                     try {
                         JSONObject user = data.getJSONObject("user");
                         infoUser.setText(Users.afficher(user, user.getInt("table")));
